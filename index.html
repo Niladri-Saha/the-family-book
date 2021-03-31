@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            The Family Book
+        </title>
+    </head>
+    <body>
+        <div style = "text-align:center"></div>
+        <h1>The Family Book</h1>
+        <img  id="member" src="https://w7.pngwing.com/pngs/665/604/png-transparent-baby-boss-boy-character-illustration-the-boss-baby-brother-dreamworks-animation-film-the-boss-baby-child-toddler-boy.png">
+        <button
+    onclick = "nextslide()"> Move </button>
+    <h2 id="mem">Niladri Saha</h2>
+     <script>
+         var images=["https://i.pinimg.com/originals/87/b8/3b/87b83ba77a10a1d3313ed7872918524d.jpg",
+                     "https://p1.hiclipart.com/preview/473/913/151/word-girl-039-s-mom-sally-in-png-clipart.jpg",
+                     "https://thumbs.dreamstime.com/b/happy-grandparents-elderly-people-grandparent-s-day-grandfather-grandmother-vector-card-white-background-98347485.jpg",
+                     "https://w7.pngwing.com/pngs/665/604/png-transparent-baby-boss-boy-character-illustration-the-boss-baby-brother-dreamworks-animation-film-the-boss-baby-child-toddler-boy.png"];
+        var names=["Biswajit Saha",
+                   "Beena Saha",
+                   "Nader Chand Basak and Tapashi Basak",
+                "Niladri Saha"];             
+                     var i = 0;
+                    
+function nextslide(){
+document.getElementById("member").src=images[i];
+document.getElementById("mem").innerHTML=names[i];
+i++;
+if (i>3){
+    i=0;
+}
+}  
+     </script>
+    </body>
+<html>
